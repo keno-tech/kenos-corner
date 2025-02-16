@@ -1,0 +1,129 @@
+.burning-rope-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.problem-statement {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.visualization {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ropes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.rope-container {
+  text-align: center;
+}
+
+.rope {
+  width: 200px;
+  height: 8px;
+  background-color: #8b4513;
+  position: relative;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.flame {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: #ffa500;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  animation: flicker 0.5s infinite alternate;
+}
+
+.flame.left {
+  left: -10px;
+}
+
+.flame.right {
+  right: -10px;
+}
+
+.burning-left .flame.left {
+  display: block;
+}
+
+.burning-both .flame.left,
+.burning-both .flame.right {
+  display: block;
+}
+
+.burned {
+  background-color: #333;
+  opacity: 0.3;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.step-description {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.solution {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+}
+
+.solution ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 10px;
+} 

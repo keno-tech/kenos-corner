@@ -1,0 +1,47 @@
+.dashboard-info {
+  padding: 15px;
+  background-color: #444;
+  border-radius: 8px;
+  margin: 10px 0;
+  width: calc(100% - 30px);
+}
+
+.time-date {
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.date {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.quote {
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.quote-content {
+  font-style: italic;
+  color: #fff;
+}
+
+.quote-author {
+  display: block;
+  color: #ccc;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.loading {
+  color: #ccc;
+  font-style: italic;
+} 
