@@ -7,6 +7,11 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+# Test route
+@app.route('/')
+def hello():
+    return "Hello, World!"
+
 # Use environment variable for database URL
 database_url = os.getenv('DATABASE_URL', 'sqlite:///todos.db')
 if database_url.startswith("postgres://"):
@@ -64,4 +69,4 @@ def delete_todo(todo_id):
     return '', 204
 
 if __name__ == '__main__':
-    app.run() 
+    app.run(debug=True) 
