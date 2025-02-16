@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+
 function Home() {
   const [todos, setTodos] = useState(() => {
     // Load todos from localStorage on initial render
